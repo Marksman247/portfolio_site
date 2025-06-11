@@ -1,0 +1,90 @@
+[
+  {
+    "title": "Vulnerability Scanner",
+    "description": "A lightweight, Streamlit-powered vulnerability scanner for scanning a target IP or domain for common vulnerabilities on well-known ports — with clean, color-coded results and CSV report export.",
+    "technologies": ["Python", "Streamlit"],
+    "emoji": "🛡️",
+    "repo_link": "https://github.com/Marksman247/Vulnerability_Scanner",
+    "app_link": "https://vulnerabilityscanner-kjobz5cdccncokhsxgdy7q.streamlit.app/"
+  },
+  {
+    "title": "Port Scanner",
+    "description": "A simple, intuitive web-based port scanner built with Python and Streamlit.",
+    "technologies": ["Python", "Streamlit"],
+    "emoji": "📡",
+    "repo_link": "https://github.com/Marksman247/Port_Scanner",
+    "app_link": "https://portscanner-45wbmgyj2c3564bafe73h2.streamlit.app/"
+  },
+  {
+    "title": "Data Cleaner App",
+    "description": "A user-friendly Streamlit app for fast, flexible data cleaning and time series forecasting on your CSV datasets.",
+    "technologies": ["Python", "Streamlit", "Holt-Winters"],
+    "emoji": "🧹",
+    "repo_link": "https://github.com/Marksman247/Data_Cleaner_app",
+    "app_link": "https://datacleanerapp-zapkahjvsijwepwecbph2i.streamlit.app/"
+  },
+  {
+    "title": "Data Profiler & Heatmap Generator",
+    "description": "A Streamlit app to explore data profiles, descriptive stats, missing values, and generate correlation heatmaps from CSV datasets.",
+    "technologies": ["Python", "Streamlit"],
+    "emoji": "📊",
+    "repo_link": "https://github.com/Marksman247/Data-Profiler-Correlation-Heatmap-Generator",
+    "app_link": "https://data-profiler-correlation-heatmap-generator-dekteu7pmaaxifffec.streamlit.app/"
+  },
+  {
+    "title": "Smart Summary Hub",
+    "description": "Upload PDFs, DOCX, or paste text, and generate summaries using OpenAI GPT models — all within Streamlit.",
+    "technologies": ["Python", "Streamlit", "OpenAI API"],
+    "emoji": "📝",
+    "repo_link": "https://github.com/Marksman247/Smart_Summary_Hub",
+    "app_link": "https://smartsummaryapp-doliksp6af6blnuatsimri.streamlit.app/"
+  },
+  {
+    "title": "Password Strength Checker",
+    "description": "A simple, intuitive password strength checker that evaluates passwords against multiple strength criteria.",
+    "technologies": ["Python", "Streamlit"],
+    "emoji": "🔒",
+    "repo_link": "https://github.com/Marksman247/password_strength_checker",
+    "app_link": "https://passwordstrengthchecker-rbkwpxexwzukf8sxwthqtj.streamlit.app/"
+  },
+  {
+    "title": "Network Scanner",
+    "description": "A lightweight LAN network scanner built with Streamlit and Python, detects devices and shows IP/MAC addresses.",
+    "technologies": ["Python", "Streamlit"],
+    "emoji": "🌐",
+    "repo_link": "https://github.com/Marksman247/network_scanner",
+    "app_link": ""
+  },
+  {
+    "title": "Time Series App",
+    "description": "A Streamlit-based time series forecasting app using Holt-Winters Exponential Smoothing.",
+    "technologies": ["Python", "Streamlit", "Holt-Winters"],
+    "emoji": "📈",
+    "repo_link": "https://github.com/Marksman247/time_series_app",
+    "app_link": "https://timeseriesapp-gsr8hkftvytqommkfxsvu5.streamlit.app/"
+  },
+  {
+    "title": "Multi-Tool Converter",
+    "description": "A Python app that converts between currencies, units, and temperatures with a clean, modular interface.",
+    "technologies": ["Python"],
+    "emoji": "🔧",
+    "repo_link": "https://github.com/Marksman247/multi-tool-converter",
+    "app_link": "https://multi-tool-converter-gh3jov4hqwfrcok7e59cze.streamlit.app/"
+  },
+  {
+    "title": "Task Manager App",
+    "description": "A personal task manager built with Streamlit for tracking, filtering, and visualizing tasks with progress metrics.",
+    "technologies": ["Python", "Streamlit"],
+    "emoji": "📅",
+    "repo_link": "https://github.com/Marksman247/task-manager-app",
+    "app_link": "https://task-manager-app-fbekxfgkhqqossrgdyjxmu.streamlit.app/"
+  },
+  {
+    "title": "SEO Keyword Checker",
+    "description": "Analyzes text for SEO — removes stopwords, calculates keyword frequency/density, detects phrases, and visualizes results.",
+    "technologies": ["Python", "Streamlit"],
+    "emoji": "🔍",
+    "repo_link": "https://github.com/Marksman247/SEO-keyword-checker",
+    "app_link": "https://seo-keyword-checker-ftaq2bnh6tukxykccj63ef.streamlit.app/"
+  }
+]
