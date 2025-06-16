@@ -41,7 +41,7 @@ st.markdown("""
 - <a href="https://www.coursera.org/account/accomplishments/verify/1MXVGDXPBQNN" target="_blank">🤖 Introduction to Artificial Intelligence (AI) — IBM</a>  
 - <a href="https://www.coursera.org/account/accomplishments/professional-cert/1CQ4EDES6QA7" target="_blank">🛡️ IBM Cybersecurity Analyst — IBM</a>  
 - <a href="https://www.coursera.org/account/accomplishments/verify/K069HSQZ3TUZ" target="_blank">🔐 Cybersecurity for Everyone — University of Maryland, College Park</a>  
-- 📊 AI Python for Beginners *(coming soon — before weekend)*  
+- <a href="https://www.coursera.org/account/accomplishments/verify/OFYIZZS5ZZ1A" target="_blank">📊 AI Python for Beginners — Coursera</a>  
 
 ---
 """, unsafe_allow_html=True)
@@ -110,5 +110,3 @@ st.markdown("""
 ---
 📧 **Contact me:** [markson.umesi@gmail.com](mailto:markson.umesi@gmail.com)
 """)
-
-
