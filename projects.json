@@ -61,14 +61,14 @@
     "technologies": ["Python", "Streamlit", "Holt-Winters"],
     "emoji": "📈",
     "repo_link": "https://github.com/Marksman247/time_series_app",
-    "app_link": "https://timeseriesapp-gsr8hkftvytqommkfxsvu5.streamlit.app/"
+    "app_link": "https://timeseriesapp-evmcpzn9jzzqmvwfwjfbjb.streamlit.app/"
   },
   {
     "title": "Multi-Tool Converter",
     "description": "A Python app that converts between currencies, units, and temperatures with a clean, modular interface.",
     "technologies": ["Python"],
     "emoji": "🔧",
-    "repo_link": "https://github.com/Marksman247/multi-tool-converter",
+    "repo_link": "https://github.com/Marksman247/multi_tool_converter",
     "app_link": "https://multitoolconverter-h2cuowepydmmiikhd22jwh.streamlit.app/"
   },
   {
@@ -77,7 +77,7 @@
     "technologies": ["Python", "Streamlit"],
     "emoji": "📅",
     "repo_link": "https://github.com/Marksman247/task-manager-app",
-    "app_link": "https://task-manager-app-fbekxfgkhqqossrgdyjxmu.streamlit.app/"
+    "app_link": "https://task-manager-app-wky6egjqba7cwjy6gfzmuh.streamlit.app/"
   },
   {
     "title": "SEO Keyword Checker",

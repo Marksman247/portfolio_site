@@ -1,11 +1,52 @@
+# 👑 Built by MAX
+
+# 📦 Import required libraries
 import streamlit as st
 import json
 import os
 
-# Set page config
-st.set_page_config(page_title="MAX's Project Portfolio 🚀", page_icon="🚀", layout="wide")
+# ✅ Set Streamlit page configuration
+st.set_page_config(
+    page_title="MAX's Project Portfolio 🚀",
+    page_icon="🚀",
+    layout="wide"
+)
 
-# Intro section with image and text side-by-side
+# ✅ Inject custom CSS to style the entire app — consistent light sky blue gradient including header
+st.markdown("""
+    <style>
+    html, body, .stApp {
+        background: linear-gradient(135deg, #d0f0f7, #b2ebf2);
+        font-family: 'Poppins', sans-serif;
+        color: #000000;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    header[data-testid="stHeader"] {
+        background: linear-gradient(135deg, #d0f0f7, #b2ebf2);
+        box-shadow: none;
+    }
+    section[data-testid="stSidebar"] {
+        background-color: #e0f7fa;
+    }
+    .stButton>button, .stDownloadButton>button {
+        background-color: #0288d1;
+        color: #ffffff;
+        border-radius: 8px;
+        border: none;
+    }
+    a {
+        color: #01579b;
+        font-weight: 600;
+    }
+    a:hover {
+        color: #0288d1;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# ✅ Intro section with profile image and personal intro text
 col1, col2 = st.columns([1, 3])
 
 with col1:
@@ -33,7 +74,7 @@ with col2:
     ---
     """, unsafe_allow_html=True)
 
-# Certifications section with clickable links
+# ✅ Certifications section with clickable external links
 st.markdown("""
 ## 📜 Certifications  
 
@@ -46,31 +87,35 @@ st.markdown("""
 ---
 """, unsafe_allow_html=True)
 
-# Load projects data
-with open("projects.json", "r", encoding="utf-8") as f:
-    projects = json.load(f)
+# ✅ Load projects data securely from JSON file
+try:
+    with open("projects.json", "r", encoding="utf-8") as f:
+        projects = json.load(f)
+except FileNotFoundError:
+    st.error("❌ projects.json file not found. Please check your directory.")
+    st.stop()
 
-# Projects section
+# ✅ Projects section with cards displaying details, icons, and working links
 st.markdown("## 📂 My Projects")
 
 for project in projects:
     col1, col2 = st.columns([1, 3])
 
     with col1:
-        # Load image if available, else use placeholder
+        # Load image if available, fallback to placeholder
         image_path = project.get("image", "assets/placeholder.png")
         if not os.path.exists(image_path):
             image_path = "assets/placeholder.png"
         st.image(image_path, width=100)
 
     with col2:
-        # Add emoji/badge based on title keywords
+        # Dynamically assign emoji based on project title keywords
         emoji = "🚀"
         title = project["title"]
         if "Vulnerability" in title:
             emoji = "🛡️"
         elif "Port Scanner" in title:
-            emoji = "🔍"
+            emoji = "📡"
         elif "Data Cleaner" in title:
             emoji = "🧹"
         elif "Profiler" in title:
@@ -78,23 +123,24 @@ for project in projects:
         elif "Summary" in title:
             emoji = "📝"
         elif "Password" in title:
-            emoji = "🔐"
+            emoji = "🔒"
         elif "Network" in title:
             emoji = "🌐"
         elif "Time Series" in title:
             emoji = "📈"
         elif "Converter" in title:
-            emoji = "🔄"
+            emoji = "🔧"
         elif "Task Manager" in title:
-            emoji = "🗂️"
+            emoji = "📅"
         elif "SEO" in title:
-            emoji = "📢"
+            emoji = "🔍"
 
+        # Display project title and description
         st.markdown(f"### {emoji} {title}")
         st.write(project["description"])
         st.write(f"**Technologies:** {', '.join(project['technologies'])}")
 
-        # Project Links
+        # Project repository and app links
         col_links = st.columns(2)
         with col_links[0]:
             if project["repo_link"]:
@@ -105,8 +151,9 @@ for project in projects:
 
     st.markdown("---")
 
-# Email contact footer
+# ✅ Contact footer section
 st.markdown("""
 ---
 📧 **Contact me:** [markson.umesi@gmail.com](mailto:markson.umesi@gmail.com)
 """)
+
